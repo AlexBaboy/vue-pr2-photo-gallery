@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-container fluid>
+      <v-app-bar
+          color="deep-green"
+          dense
+          dark
+      >
+        <v-spacer/>
+        <v-btn outlined class="ml-3">Главная</v-btn>
+        <v-btn outlined class="ml-3">Фотографии</v-btn>
+      </v-app-bar>
+    </v-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
